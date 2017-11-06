@@ -5,3 +5,4 @@ npm-debug.log
 *.sw*
 .DS_Store
 stats.json
+package-lock.json
