@@ -1,13 +1,13 @@
 const env = process.env.BABEL_ENV || process.env.NODE_ENV
 const dev = env !== 'production'
 
-module.exports = function (context, opts) {
+module.exports = function getPreset(context, opts) {
   const targets = opts && opts.targets
   const node = {
     targets: { node: 'current' },
   }
   const browser = {
-    targets: targets,
+    targets,
     useBuiltIns: false,
     modules: false,
     loose: true,
