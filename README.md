@@ -6,17 +6,30 @@ npm i -SE babel-core babel-preset-pofigizm
 
 ```json
 {
-  "preset": "pofigizm" // default targets: { node: 'current' }
+  "presets": "pofigizm" // default targets: { node: 'current' }
 }
 
 // or
 
 {
-  "preset": [
+  "presets": [
     [
       "pofigizm",
       {
         "targets": { "chrome": 60 }
+      }
+    ]
+  ]
+}
+
+// or
+
+{
+  "presets": [
+    [
+      "pofigizm",
+      {
+        "library": true
       }
     ]
   ]
